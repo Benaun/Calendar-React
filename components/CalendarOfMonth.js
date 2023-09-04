@@ -1,4 +1,4 @@
-export default function CalendarList ({ month, year }) {
+export default function CalendarOfMonth ({ month, year }) {
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     const firstDayOfMonth = new Date(year, month, 0).getDay(); // Начинаем с "нулевого" дня т.к. в США первый день недели Воскресенье
     const weeksInMonth = Math.ceil((daysInMonth + firstDayOfMonth) / 7);
