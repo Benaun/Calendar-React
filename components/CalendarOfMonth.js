@@ -11,9 +11,9 @@ export default function CalendarOfMonth ({ month, year }) {
         const weekArr = [];
         for (let day = 0; day < 7; day++) {
           if ((week === 0 && day < firstDayOfMonth) || dayCounter > daysInMonth) {
-            weekArr.push(<td className="bg-slate-300 p-5 border-2"  key={`${week}-${day}`}></td>);
+            weekArr.push(<td className="p-5 border-2 bg-slate-300"  key={`${week}-${day}`}></td>);
           } else {
-            weekArr.push(<td className="bg-slate-100 p-5 border-2" key={`${week}-${day}`}>{dayCounter}</td>);
+            weekArr.push(<td className="p-5 border-2 bg-slate-100 font-[700]" key={`${week}-${day}`}>{dayCounter}</td>);
             dayCounter++;
           }
         }

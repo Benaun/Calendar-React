@@ -9,6 +9,6 @@ export default function DateInput({ onChange }) {
     };
 
     return (
-        <input className="mb-8" type="date" value={date} onChange={handleDateChange} />
+        <input className="mb-8 bg-slate-100 border-2 border-slate-500 rounded-lg" type="date" value={date} onChange={handleDateChange} />
     );
 }
